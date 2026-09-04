@@ -241,12 +241,19 @@ under a different key.
 
 The run produced 1,201 candidates.
 
-### 4. Human review
+### 4. Review
 
-The 1,201 candidates were sorted into error classes — pseudoscience, animal
-breeding clubs, service providers, hobby collectors, records where the name
-had been misread — and the class-level decisions were taken by the author.
-681 organizations remained, in fourteen classes.
+The 1,201 candidates were read and grouped into error classes —
+pseudoscience, animal breeding clubs, service providers, hobby collectors,
+records where the name had been misread. Grouping a thousand rows is
+mechanical work and was done with model assistance; deciding what each class
+means, and which groupings were wrong, was not. Every class-level decision is
+the author's, and several of the proposed groupings were overruled.
+
+681 organizations remained, in fourteen classes. The classes are a product of
+that review rather than an input to it: "History and local heritage" exists
+because thirty-one records failed in the same way, not because the category
+was planned.
 
 The fourteen classes are a product of that review rather than an input to
 it. The classifier returns a level from 0 to 3; the classes emerged from
@@ -374,7 +381,7 @@ each would have been invisible in the output.
 |---|---|
 | Registered associations and foundations (active in the register) | 27,499 |
 | Classified as candidates | 1,201 |
-| After human review | 681 |
+| After review | 681 |
 | Filing annual reports for 2023 or later | 551 |
 
 Contacts were sought for the 551 active organizations only. Their web
@@ -433,7 +440,7 @@ was reviewed by eye in full rather than trusted.
 roughly six revision cycles, contact-lookup fixes stopped being pure gains
 and became trades — each corrected a class of errors and broke something
 else. That is the objective sign that the automation's balance has closed and
-the remainder belongs to human review.
+the remainder belongs to the reviewer..
 
 **Classification did not revisit its own conclusions.** Names were classified
 before the pages were fetched, and the pages were never fed back. The 57
