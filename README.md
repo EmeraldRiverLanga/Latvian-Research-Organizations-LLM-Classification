@@ -46,7 +46,7 @@ the intended users are. The table below translates them.
 | `Pārbaudīts` | Date the contacts were verified |
 | `Labots` | What was corrected during manual review, and why |
 
-![The final database with its summary sheet](screenshots/database.png)
+![The final database with its summary sheet](screenshots/database.PNG)
 
 Classes are ordered by the level they came from, so the three levels stay
 contiguous: research societies first, then the professional associations,
@@ -206,12 +206,12 @@ as an education provider in another — the model obeyed a different sentence
 on each run, which no single execution would have revealed. It also caught a
 branching rule whose two paths had only one test between them.
 
-![Anchor failures naming the rule, the problem and the model's own reason](screenshots/anchor_failures.png)
+![Anchor failures naming the rule, the problem and the model's own reason](screenshots/anchor_failures.PNG)
 
 Running the same suite twice produced a different set of failures — same
 code, same criteria, different rows.
 
-![The same suite on a rerun: the failures move](screenshots/anchor_failures_rerun.png)
+![The same suite on a rerun: the failures move](screenshots/anchor_failures_rerun.PNG)
 
 Hence a finding worth stating plainly: **zero temperature is not
 determinism.** It selects the most likely token, and where two candidates are
@@ -228,7 +228,7 @@ the run auditable after the fact.
 Failures during a seventeen-hour run are certain rather than possible, so
 every batch is checkpointed and already-processed records are skipped.
 
-![A crash at batch 261 and the resumed run continuing from 11,099 records already done](screenshots/resume_after_failure.png)
+![A crash at batch 261 and the resumed run continuing from 11,099 records already done](screenshots/resume_after_failure.PNG)
 
 Two mechanisms proved worth their code. Truncated responses are saved to disk
 rather than discarded — from the error alone, "broken JSON" and "the answer
@@ -237,7 +237,7 @@ the output is audited from the other side by a separate script, which is how
 a single record among 27,499 was found where the model had written its reason
 under a different key.
 
-![The completed run with the level and confidence breakdown, followed by the output audit](screenshots/classification_run.png)
+![The completed run with the level and confidence breakdown, followed by the output audit](screenshots/classification_run.PNG)
 
 The run produced 1,201 candidates.
 
@@ -280,7 +280,7 @@ active ones.
 The filing data carries two traps, both visible in a single cross-tabulation
 of year against report type.
 
-![Report type by year: the marker disappears after 2022 and 2015 is nearly empty](screenshots/annual_report_years.png)
+![Report type by year: the marker disappears after 2022 and 2015 is nearly empty](screenshots/annual_report_years.PNG)
 
 The type marker `BNAGP` identifies association reports up to 2022 and is
 empty afterwards. Filtering on the marker silently drops the three most
